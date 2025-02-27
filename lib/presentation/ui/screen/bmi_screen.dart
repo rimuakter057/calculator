@@ -219,7 +219,7 @@ class _BmiScreenState extends State<BmiScreen> {
           toggleRowSelection(index); // Toggle row selection
         }
       },
-      color: MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      color: WidgetStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
         return rowColor; // Highlight the row if selected
       }),
       cells: [
